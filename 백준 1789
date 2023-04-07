@@ -1,0 +1,17 @@
+Num = int(input())
+Sum = 0
+count = 0
+while(True):
+    count += 1
+    Sum += count
+    if Sum == Num:  #만약 합이 제시한 숫자와 같으면 count stop
+        print(count)
+        break
+
+    if Sum > Num:  #만약 합이 제시한 숫자보다 크면
+        count -= 1  #count 하나를 빼준다
+        print(count)
+        break
+
+
+
